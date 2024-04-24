@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link, useLocation } from 'react-router-dom';
 import { WhatsApp } from '@mui/icons-material';
-import logo from '../../../assets/logo.jpeg'
+import logo from '../../../assets/logo2.jpeg'
 import { Navigate, useNavigate } from 'react-router-dom/dist';
 
 const pages = [
@@ -43,7 +43,7 @@ const handleImage=()=>{
         <Container>
 
           <Toolbar disableGutters sx={{minHeight: {md:'50px'},display:{xs:'flex',},justifyContent:{xs:'space-around',} }}>
-          <img src={logo} style={{height:'40px',width:'40px',cursor:'pointer'}} onClick={handleImage}></img>
+          <img src={logo} style={{height:'60px',width:'60px',cursor:'pointer'}} onClick={handleImage}></img>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, gap: '10px', height: '50px',marginLeft:'100px' }}>
 
 

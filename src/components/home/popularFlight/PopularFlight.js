@@ -157,7 +157,7 @@ const navigate=useNavigate()
                           {item.start}
                         </Typography>
                         <Box sx={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
-                          <CurrencyPoundIcon sx={{ fontWeight: 900 }} />
+                          <CurrencyPoundIcon sx={{ fontSize: '23px' }} />
                           <Typography variant='h5' sx={{ fontWeight: 700, marginLeft:'-8px' }} >{item.price}</Typography>
                           {/* <Typography variant='body2' >{item.person}</Typography> */}
                         </Box>

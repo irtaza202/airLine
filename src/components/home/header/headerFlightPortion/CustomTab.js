@@ -93,9 +93,10 @@ const CustomTab = ({ r }) => {
   const handleSearch = (value) => {
     setSearchValue(value);
   };
-  const filteredDestinations = destinationData.filter((destination) =>
-    destination.name.toLowerCase().includes(searchValue.toLowerCase()) ||
-    destination.code.toLowerCase().includes(searchValue.toLowerCase())
+  const filteredDestinations = destinationData.filter(
+    (destination) =>
+      destination.name.toLowerCase().includes(searchValue.toLowerCase()) ||
+      destination.code.toLowerCase().includes(searchValue.toLowerCase())
   );
   const handleChange = (name, value) => {
     setFormValues((prevState) => ({
@@ -135,6 +136,48 @@ const CustomTab = ({ r }) => {
               } // Enable search functionality
               onChange={(value) => handleChange("from", value)} // Connect handleChange to Select's onChange event
             >
+              <Select.Option value="London City Airport">
+                Abidjan (ABJ)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Accra (ACC)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Banjul (BJL)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Capetown (CPT)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Conakry (CKY)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Dakar Diass (DSS)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Entebbe (EBB)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Freetown (FNA)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Harare (HRE)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Johannesburg (JNB)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Kingston (KIN)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Lagos (LOS)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Lilongwe (LLW)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Lome (LFW)
+              </Select.Option>
               <Select.Option value="London Heathrow Airport">
                 London Heathrow Airport (LHR)
               </Select.Option>
@@ -143,6 +186,12 @@ const CustomTab = ({ r }) => {
               </Select.Option>
               <Select.Option value="London City Airport">
                 London City Airport (LCY)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Lusaka (LUN)
+              </Select.Option>
+              <Select.Option value="London City Airport">
+                Monrovia (ROB)
               </Select.Option>
             </Select>
           </Form.Item>
@@ -211,7 +260,7 @@ const CustomTab = ({ r }) => {
               onChange={(date, dateString) =>
                 handleChange("returnDate", dateString)
               } // Connect handleChange to DatePicker's onChange event
-            // Set value to formValues.returnDate
+              // Set value to formValues.returnDate
             />
           </Form.Item>
         </Box>
@@ -238,7 +287,7 @@ const CustomTab = ({ r }) => {
                 <div>
                   <div style={{ padding: "8px 16px" }}>
                     <div>
-                      <span style={{ marginRight: '13px' }}>Adults:</span>
+                      <span style={{ marginRight: "13px" }}>Adults:</span>
                       <Button onClick={handleAdultsDecrement}>-</Button>
                       <span>{adults}</span>
                       <Button onClick={handleAdultsIncrement}>+</Button>
@@ -249,11 +298,21 @@ const CustomTab = ({ r }) => {
                       <span>{children}</span>
                       <Button onClick={handleChildrenIncrement}>+</Button>
                     </div>
-                    <div >
-                      <span >Infants:</span>
-                      <Button onClick={handleInfantsDecrement} sx={{ paddingLeft: '25px' }}>-</Button>
-                      <span style={{ paddingLeft: '10px' }}>{infants}</span>
-                      <Button onClick={handleInfantsIncrement} sx={{ paddingLeft: '10px' }}>+</Button>
+                    <div>
+                      <span>Infants:</span>
+                      <Button
+                        onClick={handleInfantsDecrement}
+                        sx={{ paddingLeft: "25px" }}
+                      >
+                        -
+                      </Button>
+                      <span style={{ paddingLeft: "10px" }}>{infants}</span>
+                      <Button
+                        onClick={handleInfantsIncrement}
+                        sx={{ paddingLeft: "10px" }}
+                      >
+                        +
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -309,7 +368,7 @@ const CustomTab = ({ r }) => {
               showSearch
               optionFilterProp="children"
               onChange={(value) => handleChange("airlines", value)} // Connect handleChange to Select's onChange event
-            // value={formValues.airlines}
+              // value={formValues.airlines}
             >
               <Select.Option value="Air Algerie">Air Algerie</Select.Option>
               <Select.Option value="Alitalia">Alitalia</Select.Option>
